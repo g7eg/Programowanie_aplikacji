@@ -1,0 +1,35 @@
+{"image":"mcr.microsoft.com/devcontainers/universal:2",
+
+"customizations": {
+    "vscode": {
+        "extensions": [
+            "ms-python.python"
+        ],
+        "settings": {
+            "extensions.ignoreRecommendations": true,
+            "workbench.editorAssociations": {"*.md": "vscode.markdown.preview.editor"},
+            "workbench.colorTheme": "GitHub Dark Default",
+            "workbench.sideBar.location": "right",
+            "files.exclude": {
+                "**/.git": true,
+                "**/.svn": true,
+                "**/.hg": true,
+                "**/CVS": true,
+                "**/.DS_Store": true,
+                "**/Thumbs.db": true,
+                "**/.check": true,
+                "**/.task_tests": true,
+                "**/.devcontainer": true,
+                "**/.vscode": true,
+                "**/.gitignore": true,
+                "**/.github": true,
+                "**/.img": true,
+                "**/.temp": true,
+                "**/.pytest_cache": true,
+                "LICENSE": true
+            }
+            
+        }
+    }
+}
+}
