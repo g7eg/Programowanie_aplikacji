@@ -1,6 +1,21 @@
 # Programowanie_aplikacji
 Programowanie aplikacji.
 
+___
+Jak zalogować się do Codespace:
+1) Załóż konto na GitHub korzystając z maila studenckiego.
+2) Zaloguj się na swoje konto GitHub.
+3) Odnajdź niniejsze repozytorium <a href="[url](https://github.com/g7eg/Programowanie_aplikacji.git)">Programowanie aplikacji</a>
+
+4) Uruchomm Codespace klikając:
+[alt text](/.img/image.png)
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+
+
+
 # Lista 7
 ___
 Lista 7 Zad. 1
@@ -103,3 +118,28 @@ Przykład:
 Podaj liczbę punktów: 99
 Wybierz formę oceny (liczbowo, słownie, oba): oba
 Otrzymałeś ocenę: 5.0 (bardzo dobry)
+
+# Lista 8
+___
+
+Lista 8 Zad. 1
+Napisać program, który dla wprowadzonego przez użytkownika ciągu liczb rzeczywistych wyznacza ich
+średnią arytmetyczną. Wprowadzanie ciągu kończy się poprzez wprowadzenie napisu ’end’. Program
+powinien raportować błąd, jeśli ’end’ jest pierwszą podaną wartością. Przykładowo, dla wejścia:
+1
+-22
+8
+-3.5
+13
+end
+Poprawną odpowiedzią jest -0.7.
+___
+
+Lista 8 Zad. 2
+Napisać program wyświetlający liczby całkowite z przedziału <0,y> (liczbę całkowitą y podaje użytkownik). W przypadku podania niewłaściwej wartości wyświetl komunikat: "Błąd: Liczba y musi być większa lub równa 0."
+___
+Lista 8 Zad.3 
+Napisać program wyświetlający liczby całkowite z przedziału <x,y> (liczby całkowite x i y podajeużytkownik). W przypadku podania niewłaściwej wartości wyświetl komunikat: "Błąd: Liczba x musi być mniejsza lub równa liczbie y."
+___
+Lista 8 Zad. 4
+Napisać program, który wyświetli wszystkie liczby z przedziału od 50 do 100 podzielne przez dowolną liczbę k, którą podaje użytkownik. W przypadku podania niewłaściwej wartości wyświetl komunikat: "Błąd: Liczba k musi być większa od zera."
