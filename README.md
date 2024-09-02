@@ -5,16 +5,23 @@ ___
 Jak zalogować się do Codespace:
 1) Załóż konto na GitHub korzystając z maila studenckiego.
 2) Zaloguj się na swoje konto GitHub.
-3) Odnajdź niniejsze repozytorium <a href="[url](https://github.com/g7eg/Programowanie_aplikacji.git)">Programowanie aplikacji</a>
+3) Odnajdź niniejsze repozytorium 
+[Programowanie aplikacji](https://github.com/g7eg/Programowanie_aplikacji.git)
 
-4) Uruchomm Codespace klikając:
-[alt text](/.img/image.png)
+4) Uruchomm Codespace klikając następujące przyciski:
+> 1) Code
+> 2) Codespaces
+> 3) Wybierz z listy utworzene Codespace a jeżeli uruchamiasz je po raz pierwszy to wybierz '+' (Create a codespace on main)
+
+![alt text](image.png)
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> Codespace pozwala pracować w prekonfigurowanym środowisku z poziomu przeglądarki internetowej. Nie musisz instalować żadnego środowiska lokalnie na komputerze. Wystarczy że zalogujesz się na swoje konto.
 
 
 
+<details>
+<summary> Treść zadań lista 7 :guitar: </summary>
 
 # Lista 7
 ___
@@ -118,7 +125,11 @@ Przykład:
 Podaj liczbę punktów: 99
 Wybierz formę oceny (liczbowo, słownie, oba): oba
 Otrzymałeś ocenę: 5.0 (bardzo dobry)
+</details>
 
+
+<details>
+<summary> Treść zadań lista 8 </summary>
 # Lista 8
 ___
 
@@ -143,3 +154,7 @@ Napisać program wyświetlający liczby całkowite z przedziału <x,y> (liczby c
 ___
 Lista 8 Zad. 4
 Napisać program, który wyświetli wszystkie liczby z przedziału od 50 do 100 podzielne przez dowolną liczbę k, którą podaje użytkownik. W przypadku podania niewłaściwej wartości wyświetl komunikat: "Błąd: Liczba k musi być większa od zera."
+
+
+
+</details>
