@@ -1,5 +1,5 @@
-# Programowanie_aplikacji
-Programowanie aplikacji.
+# Podstawy programowania
+Podstawy programowania.
 
 ___
 Jak zalogować się do Codespace:
