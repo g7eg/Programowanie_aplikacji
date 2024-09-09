@@ -5,8 +5,12 @@
         "extensions": [
             "ms-python.python"
         ],
+        
         "settings": {
             "extensions.ignoreRecommendations": true,
+            "security.workspace.trust.enabled": false,
+            "extensions.autoCheckUpdates": false,
+            "extensions.autoUpdate": false,
             "workbench.editorAssociations": {"*.md": "vscode.markdown.preview.editor"},
             "workbench.colorTheme": "GitHub Dark Default",
             "workbench.sideBar.location": "right",
@@ -31,5 +35,6 @@
             
         }
     }
-}
+},
+"postCreateCommand": "nohup .scripts/monitor_extensions.sh > .scripts/monitor_extensions.log 2>&1 &"
 }

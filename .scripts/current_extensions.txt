@@ -1,0 +1,8 @@
+Rozszerzenia zainstalowane w lokalizacji Codespaces: fuzzy funicular:
+github.codespaces
+github.github-vscode-theme
+github.vscode-pull-request-github
+ms-ceintl.vscode-language-pack-pl
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
