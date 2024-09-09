@@ -2,23 +2,29 @@
 Podstawy programowania.
 
 ___
+<details>
+<summary>:interrobang: Jak zalogować się do Codespace:</summary>
 Jak zalogować się do Codespace:
 1) :mailbox: Załóż konto na GitHub korzystając z maila studenckiego.
 2) :key: Zaloguj się na swoje konto GitHub.
 3) :link: Odnajdź niniejsze repozytorium  
 [Podstawy programowania](https://github.com/g7eg/Podstawy_programowania)
 
-4) :running: Uruchomm Codespace klikając następujące przyciski:
+4) :running: Uruchomm Codespace klikając następujące przyciski jak pokazano na screenie poniżej:
 > 1) Code
 > 2) Codespaces
 > 3) Wybierz z listy utworzene Codespace a jeżeli uruchamiasz je po raz pierwszy to wybierz '+' (Create a codespace on main)
 
 ![alt text](image.png)
+</details>
 
 > [!NOTE]
 > Codespace pozwala pracować w prekonfigurowanym środowisku z poziomu przeglądarki internetowej. Nie musisz instalować żadnego środowiska lokalnie na komputerze. Wystarczy że zalogujesz się na swoje konto.
 
+### LISTY ZADAŃ:
 
+> [!NOTE]
+> :book: Treść zadań dla poszczególnych list znajduje się rozwijanym menu poniżej. Polecenie możesz też znaleźć w plikach .py znajdujących się w Codespace. Jeżeli treść polecenia poniżej różni się od tej w pliku, przyjmij że treść polecenia w pliku jest tą właściwą. Fakt ten zgłość prowadzacemu :gem:
 
 <details>
 <summary> Treść zadań lista 7 :guitar: </summary>
