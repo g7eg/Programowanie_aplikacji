@@ -3,12 +3,12 @@ Programowanie aplikacji.
 
 ___
 Jak zalogować się do Codespace:
-1) Załóż konto na GitHub korzystając z maila studenckiego.
-2) Zaloguj się na swoje konto GitHub.
-3) Odnajdź niniejsze repozytorium 
-[Programowanie aplikacji](https://github.com/g7eg/Programowanie_aplikacji.git)
+1) :mailbox: Załóż konto na GitHub korzystając z maila studenckiego.
+2) :key: Zaloguj się na swoje konto GitHub.
+3) :link: Odnajdź niniejsze repozytorium  
+[Podstawy programowania](https://github.com/g7eg/Podstawy_programowania)
 
-4) Uruchomm Codespace klikając następujące przyciski:
+4) :running: Uruchomm Codespace klikając następujące przyciski:
 > 1) Code
 > 2) Codespaces
 > 3) Wybierz z listy utworzene Codespace a jeżeli uruchamiasz je po raz pierwszy to wybierz '+' (Create a codespace on main)
