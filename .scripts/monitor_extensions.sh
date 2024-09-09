@@ -1,22 +1,31 @@
 #!/bin/bash
 
+LOG_FILE=".scripts/monitor_extensions.log"
+CURRENT_EXTENSIONS_FILE=".scripts/current_extensions.txt"
+BASE_EXTENSIONS_FILE=".scripts/base_extensions.txt"
+
+echo "$(date): Skrypt monitor_extensions.sh został uruchomiony" >> $LOG_FILE
+
 # Funkcja do sprawdzania zainstalowanych rozszerzeń
 check_extensions() {
-    code --list-extensions > current_extensions.txt
-    if ! cmp -s current_extensions.txt base_extensions.txt; then
-        echo "$(date): Wykryto nowe rozszerzenia. Wykonuję akcję..." >> monitor_extensions.log
+    echo "$(date): Sprawdzanie rozszerzeń..." >> $LOG_FILE
+    # Generowanie listy zainstalowanych rozszerzeń i usuwanie niechcianej linii
+    code --list-extensions | grep -v 'Rozszerzenia zainstalowane w lokalizacji Codespaces:' | sort > $CURRENT_EXTENSIONS_FILE
+    
+    if ! cmp -s $CURRENT_EXTENSIONS_FILE $BASE_EXTENSIONS_FILE; then
+        echo "$(date): Wykryto nowe rozszerzenia. Wykonuję akcję..." >> $LOG_FILE
         
         # Znajdź nowe rozszerzenia, które nie są na liście wzorcowej
-        new_extensions=$(comm -23 <(sort current_extensions.txt) <(sort base_extensions.txt))
+        new_extensions=$(comm -23 $CURRENT_EXTENSIONS_FILE $BASE_EXTENSIONS_FILE)
         
         # Odinstaluj nowe rozszerzenia
         for extension in $new_extensions; do
-            echo "$(date): Odinstalowuję rozszerzenie $extension" >> monitor_extensions.log
+            echo "$(date): Odinstalowuję rozszerzenie $extension" >> $LOG_FILE
             code --uninstall-extension $extension
         done
         
         # Zaktualizuj plik z poprzednimi rozszerzeniami
-        code --list-extensions > current_extensions.txt
+        code --list-extensions | grep -v 'Rozszerzenia zainstalowane w lokalizacji Codespaces:' | sort > $CURRENT_EXTENSIONS_FILE
     fi
 }
 
