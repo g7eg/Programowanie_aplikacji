@@ -1,32 +1,49 @@
 #!/bin/bash
 
 LOG_FILE=".scripts/monitor_extensions.log"
-CURRENT_EXTENSIONS_FILE=".scripts/current_extensions.txt"
-BASE_EXTENSIONS_FILE=".scripts/base_extensions.txt"
+BASE_EXTENSIONS_FILE=".scripts/base_extensions.json"
+CURRENT_EXTENSIONS_FILE="/home/codespace/.vscode-remote/extensions/extensions.json"
 
-echo "$(date): Skrypt monitor_extensions.sh został uruchomiony" >> $LOG_FILE
+# Upewnij się, że katalog istnieje
+mkdir -p "$(dirname "$LOG_FILE")"
+
+echo "$(date): Skrypt monitor_extensions.sh został uruchomiony" >> "$LOG_FILE"
 
 # Funkcja do sprawdzania zainstalowanych rozszerzeń
 check_extensions() {
-    echo "$(date): Sprawdzanie rozszerzeń..." >> $LOG_FILE
-    # Generowanie listy zainstalowanych rozszerzeń i usuwanie niechcianej linii
-    code --list-extensions | grep -v 'Rozszerzenia zainstalowane w lokalizacji Codespaces:' | sort > $CURRENT_EXTENSIONS_FILE
-    
-    if ! cmp -s $CURRENT_EXTENSIONS_FILE $BASE_EXTENSIONS_FILE; then
-        echo "$(date): Wykryto nowe rozszerzenia. Wykonuję akcję..." >> $LOG_FILE
-        
-        # Znajdź nowe rozszerzenia, które nie są na liście wzorcowej
-        new_extensions=$(comm -23 $CURRENT_EXTENSIONS_FILE $BASE_EXTENSIONS_FILE)
-        
-        # Odinstaluj nowe rozszerzenia
-        for extension in $new_extensions; do
-            echo "$(date): Odinstalowuję rozszerzenie $extension" >> $LOG_FILE
-            code --uninstall-extension $extension
-        done
-        
-        # Zaktualizuj plik z poprzednimi rozszerzeniami
-        code --list-extensions | grep -v 'Rozszerzenia zainstalowane w lokalizacji Codespaces:' | sort > $CURRENT_EXTENSIONS_FILE
+    echo "$(date): Sprawdzanie rozszerzeń..." >> "$LOG_FILE"
+
+    # Sprawdź, czy plik z aktualnymi rozszerzeniami istnieje
+    if [ ! -f "$CURRENT_EXTENSIONS_FILE" ]; then
+        echo "$(date): Plik $CURRENT_EXTENSIONS_FILE nie istnieje" >> "$LOG_FILE"
+        return
     fi
+
+    # Wyodrębnij id z pliku base_extensions.json i umieść je w tablicy asocjacyjnej
+    declare -A base_ids_map
+    while IFS= read -r base_id; do
+        base_ids_map["$base_id"]=1
+    done < <(jq -r '.[] | .identifier.id' "$BASE_EXTENSIONS_FILE")
+
+    # Funkcja do wczytywania aktualnych rozszerzeń
+    load_current_extensions() {
+        jq -r '.[] | .identifier.id' "$CURRENT_EXTENSIONS_FILE"
+    }
+
+    current_ids=$(load_current_extensions)
+
+    # Porównaj id z obu plików iteracyjnie
+    for current_id in $current_ids; do
+        if [[ -z "${base_ids_map[$current_id]}" ]]; then
+            path=$(jq -r --arg id "$current_id" '.[] | select(.identifier.id == $id) | .location.path' "$CURRENT_EXTENSIONS_FILE")
+            if [ -n "$path" ]; then
+                echo "$(date): Usuwam rozszerzenie $current_id z katalogu $path" >> "$LOG_FILE"
+                rm -rf "$path"
+                # Usuń wpis z extensions.json
+                jq --arg id "$current_id" 'del(.[] | select(.identifier.id == $id))' "$CURRENT_EXTENSIONS_FILE" > "${CURRENT_EXTENSIONS_FILE}.tmp" && mv "${CURRENT_EXTENSIONS_FILE}.tmp" "$CURRENT_EXTENSIONS_FILE"
+            fi
+        fi
+    done
 }
 
 # Pętla monitorująca rozszerzenia co 10 sekund
