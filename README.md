@@ -15,7 +15,7 @@ Jak zalogować się do Codespace:
 > 2) Codespaces
 > 3) Wybierz z listy utworzene Codespace a jeżeli uruchamiasz je po raz pierwszy to wybierz '+' (Create a codespace on main)
 
-![alt text](image.png)
+![alt text](.img/image.png)
 </details>
 
 > [!NOTE]

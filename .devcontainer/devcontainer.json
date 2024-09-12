@@ -3,7 +3,10 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "bierner.markdown-emoji",
+                "yzhang.markdown-all-in-one",
+                "shd101wyy.markdown-preview-enhanced"
             ],
             "settings": {
                 "extensions.ignoreRecommendations": true,
@@ -36,6 +39,6 @@
             }
         }
     },
-    "postStartCommand": "sleep 10 && bash -c '.scripts/monitor_extensions.sh' >> /tmp/postStartCommand.log 2>&1"
+    "postStartCommand": "sleep 1 && bash -c '.scripts/monitor_extensions.sh' >> /tmp/postStartCommand.log 2>&1"
     
 }
