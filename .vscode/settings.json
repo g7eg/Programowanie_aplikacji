@@ -1,5 +1,9 @@
 {
 
     "workbench.panel.defaultLocation": "bottom",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "markdown.preview.breaks": true,
+    "markdown.preview.fontSize": 14,
+    "markdown.preview.emoji": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true
 }
