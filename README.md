@@ -320,5 +320,81 @@ Podaj liczbę: 5
 Lista: [2, 3, 5]
 Suma liczb: 10
 
+___
+## Lista 9 Zad. 3
+Korzystając z programu z zad 1 do wprowadzenia liczb, znaleźć najmniejszą i największą wartość w
+liście i wypisać ją na ekran
 
+> [!TIP]
+> Przykład:
+Ile chcesz wprowadzić liczb? 4
+Podaj liczbę: 2
+Podaj liczbę: 3
+Podaj liczbę: 5
+Podaj liczbę: 6
+Lista: [2, 3, 5, 6]
+Najmniejsza wartość: 2
+Największa wartość: 6
+
+
+> [!TIP]
+> Przykład:
+Ile chcesz wprowadzić liczb? -2
+Błędna wartość, wprowadź liczbę większą niż 0.
+
+___
+## Lista 9 Zad. 4
+Korzystając z programu z zad 1 do wprowadzenia liczb, znaleźć wszystkie pary liczb, których w suma
+daje liczbę podaną przez użytkownika.
+
+> [!TIP]
+> Przykład:
+Ile chcesz wprowadzić liczb? 5
+Podaj liczbę: 3
+Podaj liczbę: 4
+Podaj liczbę: 0
+Podaj liczbę: 7
+Podaj liczbę: 1
+Lista: [3, 4, 0, 7, 1]
+Wprowadź szukaną sumę: 7
+3 + 4 = 7
+0 + 7 = 7
+
+> [!TIP]
+> Przykład:
+Ile chcesz wprowadzić liczb? 2
+Podaj liczbę: 2
+Podaj liczbę: 3
+Lista: [2, 3]
+Wprowadź szukaną sumę: 22
+Brak par liczb, których suma jest równa szukanej sumie.
+
+___
+## Lista 9 Zad. 5
+Przygotować słownik zawierający min 5 kierunków studiów oferowanych na Politechnice Wrocławskiej
+razem z wydziałem, na którym są oferowane. Następnie napisać program, który będzie wskazywał na
+jakim wydziale znajduje się kierunek wyszukiwany przez użytkownika. W przypadku braku takiego
+kierunku poinformuj użytkownika, że nie może studiować tego kierunku na Politechnice Wrocławskiej.
+
+> [!TIP]
+> Przykład:
+Podaj nazwę kierunku studiów: Informatyka
+Kierunek Informatyka znajduje się na Wydział Elektroniki.
+
+> [!TIP]
+> Przykład:
+Podaj nazwę kierunku studiów: Garncarstwo
+Nie możesz studiować kierunku Garncarstwo na Politechnice Wrocławskiej.
+
+___
+## Lista 9 Zad. 6
+Napisać program, który pobierze od użytkownika zdanie, a następnie policzy występowania
+poszczególnych znaków w danym zdaniu (oprócz znaku spacji), umieści wynik w słowniku i wypisze go
+na ekran. Zastosować metodę .lower(), aby do słownika wprowadzać tylko małe litery niezależnie od
+tego jak zostały wprowadzone przez użytkownika. Litery mają być kluczem, wartością liczba wystąpień.
+
+> [!TIP]
+> Przykład:
+Podaj zdanie: Python jest SUPER!
+{'p': 2, 'y': 1, 't': 2, 'h': 1, 'o': 1, 'n': 1, 'j': 1, 'e': 2, 's': 2, 'u': 1, 'r': 1, '!': 1}
 </details>

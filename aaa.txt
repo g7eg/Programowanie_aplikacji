@@ -1,3 +1,0 @@
-FAILED tests/test_l8_z5.py::test_odgadniecie_w_trzech_probach - AssertionError: 
-Oczekiwano: ['Szukana wartość jest mniejsza', 'Szukana wartość jest większa', 'Brawo! Odgadłeś liczbę w 3 próbach.'], 
-otrzymano: ['']
