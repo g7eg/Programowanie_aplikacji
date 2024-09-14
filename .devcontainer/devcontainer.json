@@ -32,6 +32,7 @@
                     "**/.gitignore": true,
                     "**/.github": true,
                     "**/.img": true,
+                    "**/.scripts": true,
                     "**/.temp": true,
                     "**/.pytest_cache": true,
                     "LICENSE": true
@@ -39,6 +40,7 @@
             }
         }
     },
-    "postStartCommand": "sleep 1 && bash -c '.scripts/monitor_extensions.sh' >> /tmp/postStartCommand.log 2>&1"
+    "postCreateCommand": "pip install pytest",
+    "postStartCommand": "sleep 1 && bash -c '.scripts/monitor_extensions.sh' >> /tmp/postStartCommand.log 2>&1" 
     
 }

@@ -1,4 +1,5 @@
 {
 
-    "workbench.panel.defaultLocation": "bottom"
+    "workbench.panel.defaultLocation": "bottom",
+    "editor.minimap.enabled": false
 }

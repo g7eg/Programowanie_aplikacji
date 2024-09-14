@@ -24,12 +24,12 @@ Jak zalogować się do Codespace:
 ### LISTY ZADAŃ:
 
 > [!NOTE]
-> :book: Treść zadań dla poszczególnych list znajduje się rozwijanym menu poniżej. Polecenie możesz też znaleźć w plikach .py znajdujących się w Codespace. Jeżeli treść polecenia poniżej różni się od tej w pliku, przyjmij że treść polecenia w pliku jest tą właściwą. Fakt ten zgłość prowadzacemu :gem:
+> :book: Treść zadań dla poszczególnych list znajduje się w rozwijanym menu poniżej. Polecenie możesz też znaleźć w plikach .py znajdujących się w Codespace. Jeżeli treść polecenia poniżej różni się od tej w pliku, przyjmij że treść polecenia w pliku jest tą właściwą. Fakt ten zgłość również prowadzacemu :gem:
 
 <details>
-<summary> Treść zadań lista 7 :guitar: </summary>
+<summary> Treść zadań lista 7 </summary>
 
-# Lista 7
+# Lista 7 :guitar:
 ___
 Lista 7 Zad. 1
 Napisać program proszący użytkownika o imię i rok urodzenia, a następnie obliczający i wypisujący jego
@@ -136,7 +136,8 @@ Otrzymałeś ocenę: 5.0 (bardzo dobry)
 
 <details>
 <summary> Treść zadań lista 8 </summary>
-# Lista 8
+
+# Lista 8 :crown:
 ___
 
 Lista 8 Zad. 1
@@ -160,7 +161,44 @@ Napisać program wyświetlający liczby całkowite z przedziału <x,y> (liczby c
 ___
 Lista 8 Zad. 4
 Napisać program, który wyświetli wszystkie liczby z przedziału od 50 do 100 podzielne przez dowolną liczbę k, którą podaje użytkownik. W przypadku podania niewłaściwej wartości wyświetl komunikat: "Błąd: Liczba k musi być większa od zera."
+___
+Lista 8 Zad. 5
+Napisać program, gdzie zadaniem gracza jest odgadnięcie liczby. Liczba jest wprowadzona na stałe w kodzie. Jeżeli użytkownik poda za dużą liczbę program wyświetli komunikat „Szukana wartość jest mniejsza”. Jeżeli wprowadzi za małą liczbę program wyświetli „Szukana wartość jest większa”. Po odgadnięciu liczby gracz dowiaduje się po ilu próbach udało mu się zakończyć grę.
 
+Przykład:
+Podaj liczbę: 22
+Szukana wartość jest większa
+Podaj liczbę: 45
+Szukana wartość jest mniejsza
+Podaj liczbę: 42
+Brawo! Odgadłeś liczbę w 3 próbach.
 
-
+Przykład 2:
+Podaj liczbę: 42
+Brawo! Odgadłeś liczbę w 1 próbach.
+___
+Lista 8 Zad. 6
+Napisać program, który narysuje z gwiazdek (*) kwadrat 10 na 10.
+Przykład:
+<blockquote>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+**********<br>
+</blockquote>
+___
+Lista 8 Zad. 7
+Napisać program który wypisze na ekranie wszystkie możliwe kombinacje książek jakie można wybrać.
+Do wyboru jest pięć książek, a wybieramy trzy z nich. Fragment danych jakie powinny zostać
+wypisywane na ekranie:
+1 2 3
+1 2 4
+1 2 5
+…
 </details>
