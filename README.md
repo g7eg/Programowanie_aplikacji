@@ -293,7 +293,7 @@ Do wyboru jest pięć książek, a wybieramy trzy z nich.
 <summary> Treść zadań lista 9 </summary>
 
 # Lista 9 :ghost:
-___
+
 ## Lista 9 Zad. 1
 Napisać program proszący użytkownika o ilość liczb, które chce wprowadzić, następnie po kolei, każdą
 liczbę należy wprowadzić do listy i wypisać cała zawartość listy. W przypadku podania niepoprawnej
@@ -397,4 +397,51 @@ tego jak zostały wprowadzone przez użytkownika. Litery mają być kluczem, war
 > Przykład:
 Podaj zdanie: Python jest SUPER!
 {'p': 2, 'y': 1, 't': 2, 'h': 1, 'o': 1, 'n': 1, 'j': 1, 'e': 2, 's': 2, 'u': 1, 'r': 1, '!': 1}
+</details>
+
+
+<details>
+<summary> Treść zadań lista 10 </summary>
+
+# Lista 10 :rocket:
+
+## Lista 10 Zad. 1
+Napisać funkcję ***kelvin_na_celsiusz()*** która przyjmuje wartość temperatury w Kelvinach i zwraca wartość wyrażoną w
+stopniach Celsjusza. W przypadku podania wartości ujemnej funkcja zwraca None.
+
+> [!TIP]
+> Przykład:
+Podaj temperaturę w Kelvinach: 223
+Temperatura w stopniach Celsjusza: -50.15
+
+> [!TIP]
+> Przykład:
+Podaj temperaturę w Kelvinach: -2
+Wartość nie może być ujemna.
+
+## Lista 10 Zad. 2
+Napisać program, w którym należy sprawdzić we funkcji ***czy_liczba_doskonala(n)***, czy podana liczba ***n*** jest liczbą doskonała. Funkcja zwraca True jeśli liczba jest liczbą doskonała lub False jeśli nią nie jest. Liczba doskonała to liczba naturalna, która jest sumą wszystkich swych naturalnych dzielników właściwych (to znaczy od niej mniejszych).
+
+> [!TIP]
+> Przykład:
+Podaj licnę którą chcesz sprawdzić:6
+Liczba 6 jest liczbą doskonałą.
+
+> [!TIP]
+> Przykład:
+Podaj licnę którą chcesz sprawdzić:12
+Liczba 12 nie jest liczbą doskonałą.
+
+
+## Lista 10 Zad. 2
+Napisać program, w którym należy utworzysz funkcje ***czy_liczba_pierwsza(n)*** sprawdzajacą czy ***n*** jest liczbą pierwszą, zwracając True lub False. Następnie utwórzyć kolejną funkcję ***generuj_nieparzyste_liczby_pierwsze()*** wykorzystującą wcześniej utworzoną funckę ***czy_liczba_pierwsza(n)*** która za pomocą wyrażania generującego obliczy liczby pierwsze od 1 do 100.
+Wynik wyświetl w postaci listy zawierającej liczby pierwsze ze wskazanego przedziału.
+* Sprawdzanie, czy liczba jest pierwsza powinno odbyć się w odrębnej funkcji.
+
+> [!TIP]
+> Przykład:
+Nieparzyste liczby pierwsze od 1 do 100:
+[3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+
 </details>
