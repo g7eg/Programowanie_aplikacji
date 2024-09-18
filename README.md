@@ -433,7 +433,7 @@ Podaj licnę którą chcesz sprawdzić:12
 Liczba 12 nie jest liczbą doskonałą.
 
 
-## Lista 10 Zad. 2
+## Lista 10 Zad. 3
 Napisać program, w którym należy utworzysz funkcje ***czy_liczba_pierwsza(n)*** sprawdzajacą czy ***n*** jest liczbą pierwszą, zwracając True lub False. Następnie utwórzyć kolejną funkcję ***generuj_nieparzyste_liczby_pierwsze()*** wykorzystującą wcześniej utworzoną funckę ***czy_liczba_pierwsza(n)*** która za pomocą wyrażania generującego obliczy liczby pierwsze od 1 do 100.
 Wynik wyświetl w postaci listy zawierającej liczby pierwsze ze wskazanego przedziału.
 * Sprawdzanie, czy liczba jest pierwsza powinno odbyć się w odrębnej funkcji.
@@ -443,5 +443,59 @@ Wynik wyświetl w postaci listy zawierającej liczby pierwsze ze wskazanego prze
 Nieparzyste liczby pierwsze od 1 do 100:
 [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 
+## Lista 10 Zad. 4
+Napisać program, który będzie obliczał i zwracał silnię podanej liczby za pomocą funkcji oblicz_silnie(n). Następnie wykorzystać
+funkcję obliczającą silnię do znalezienia silni dla liczby wybranej przez użytkownika.
 
+> [!TIP]
+> Przykład:
+Podaj liczbę, dla której chcesz obliczyć silnię: 3
+Silnia liczby 3 wynosi 6.
+
+
+## Lista 10 Zad. 5
+Napisać program z wykorzystaniem funkcji, który przeprowadzi operacje dodawania, odejmowania i mnożenia dla dwóch podanych wielomianów. Dla każdego działania utworzyć osobną funkcję. Dla dodawania i odejmowania dopasować długości wielomianów przez dodanie zer do krótszego
+wielomianu. Wówczas wykorzystać funkcję zip. Funkcja zip(w1, w2) w Pythonie łączy elementy dwóch iterowalnych obiektów w1 i w2 w pary. Tworzy sekwencję krotek, gdzie każdy element w parach składa się z odpowiednio sparowanych elementów z w1 i w2. 
+Na przykład:
+
+```python
+w1 = [1, 2, 3]
+w2 = ['a', 'b', 'c']
+zipped = zip(w1, w2)
+print(list(zipped))
+[(1, 'a'), (2, 'b'), (3, 'c')]
+# W mnożeniu proszę zainicjalizować listę wynikową zerami.
+wielomian_1 = [2, -3, 0, 4] # 2x^3 - 3x^2 + 0x + 4
+wielomian_2 = [1, 5, 2] #  x^2 + 5x + 2
+```
+Wyniki wyświetlić na ekranie komputera.
+
+## Lista 10 Zad. 6
+Napisz program, który będzie zawierał funkcje do analizy danych. Funkcje, jakie powinny zostać zaimplementowane to:
+
+srednia_wydajnosc – oblicza średnią wydajność z podanej listy,
+maksymalna_wydajnosc – zwraca maksymalną wydajność z listy,
+minimalna_wydajnosc – zwraca minimalną wydajność z listy,
+odchylenie_standardowe – oblicza odchylenie standardowe z listy.
+Dane wydajności to: [120, 150, 130, 170, 140].
+
+Program powinien:
+
+W pierwszej części rozwiązać problem bez korzystania z wbudowanych funkcji,
+W drugiej części zastosować wbudowane funkcje Pythona.
+Oba rozwiązania powinny znajdować się w jednym pliku. 
+Wyniki wyświetl na ekranie i porównaj je.
+
+> [!TIP]
+> Przykład:
+Obliczenia bez wbudowanych funkcji:
+Średnia wydajność: 142.0
+Maksymalna wydajność: 170
+Minimalna wydajność: 120
+Odchylenie standardowe: 17.204650534085253
+Obliczenia z wbudowanymi funkcjami:
+Średnia wydajność: 142.0
+Maksymalna wydajność: 170
+Minimalna wydajność: 120
+Odchylenie standardowe: 17.204650534085253
 </details>

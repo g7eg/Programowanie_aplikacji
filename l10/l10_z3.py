@@ -4,7 +4,6 @@
 # Wynik wyświetl w postaci listy zawierającej liczby pierwsze ze wskazanego przedziału.
 
 # Sprawdzanie, czy liczba jest pierwsza powinno odbyć się w odrębnej funkcji.
-# Tip
 
 # Przykład:
 # Nieparzyste liczby pierwsze od 1 do 100:
